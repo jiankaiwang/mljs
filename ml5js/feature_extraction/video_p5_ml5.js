@@ -1,34 +1,70 @@
+let featureExtractor;
 let classifier;
 let video;
+let loss;
+let dogImages = 0;
+let catImages = 0;
 
-// setup the environment
 function setup() {
   noCanvas();
 
-  // create a camera input
+  // create a video element
   video = createCapture(VIDEO);
-  // initialize the image classifier
-  classifier = ml5.imageClassifier('MobileNet', video, modelReady);
+  // append it to the video container DOM element
+  video.parent('videoContainer');
+
+  // extract the already learned features from mobilent
+  featureExtractor = ml5.featureExtractor('MobileNet', modelReady);
+  // create a new classifier using features
+  // and given the video we want to use
+  classifier = featureExtractor.classification(video);
+
+  // setup the UI Buttons
+  setupButtons();
 }
 
 function modelReady() {
-  // change the status once the model is loaded
-  // select() is like jquery
-  select("#status").html('Model loaded');
-  // start to classify the video (frame)
-  classifyVideo();
+  select("#loading").html('Model was loaded.');
 }
 
-function classifyVideo() {
-  // the main classification function
-  classifier.predict(gotResult);
+function setupButtons() {
+  buttonCat = select("#catButton");
+  buttonCat.mousePressed(function() {
+    classifier.addImage('cat');
+    select("#amountOfCatImages").html(catImages++);
+  });
+
+  buttonDog = select("#dogButton");
+  buttonDog.mousePressed(function() {
+    classifier.addImage('dog');
+    select("#amountOfDogImages").html(dogImages++);
+  });
+
+  train = select("#train");
+  train.mousePressed(function() {
+    classifier.train(function(lossValue) {
+      if(lossValue) {
+        loss = lossValue;
+        select('#loss').html("Loss value: " + loss);
+      } else {
+        select('#loss').html('Training finished. Loss is : ' + loss);
+      }
+    });
+  });
+
+  buttonPredict = select("#predict");
+  buttonPredict.mousePressed(classify);
 }
 
-function gotResult(err, result) {
-  // show the result on the webpage
-  select("#result").html(result[0].className);
-  select("#probability").html(result[0].probability);
+function classify() {;
+  classifier.classify(gotResult);
+}
 
-  // continue the classification
-  classifyVideo();
+function gotResult(err, data) {
+  if(err) {
+    console.error(new Error("classify error"));
+    console.error(err);
+  }
+  select('#result').html(data);
+  classify();
 }
