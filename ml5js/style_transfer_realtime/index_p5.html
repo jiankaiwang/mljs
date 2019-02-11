@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Style Transfer with Real-Time Streaming</h1>
+        <p id="status">Loading models ...</p>
+        <button id="startbtn">Start</button>
+
+        <div id="CanvasContainer">
+            <p>
+                Style: <a href="https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa">
+                    Udnie (Young American Girl, The Dance), 1913 - Francis Picabia</a>
+            </p>
+            <img src="img/udnie.jpg"></img>
+        </div>
+
+        <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" type="text/javascript"></script>        
+        <script src="p5_ml5.js"></script>
+    </body>
+</html>
