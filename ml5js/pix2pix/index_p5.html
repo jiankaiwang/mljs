@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            .border-box {
+                border: black 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ｐixel to Pixel</h1>
+        <p>
+            <span>1. Press your mouse to draw a Pikachu on the canvas below.</span><br>
+            <span>2. Click 'Transfer' button.</span><br>
+            <span>3. A colored Pikachu image will appear.</span><br>
+            <span>4. Click 'Clear' button to clear the canvas and draw again in real time.</span><br>
+        </p>
+
+        <p id="status">Loading models ...</p>
+        
+        <button id="clearBtn">Clear</button>
+        <button id="transferBtn">Transfer</button>
+
+        <div id="editor"></div>
+        <div id="output"></div>
+
+        <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" type="text/javascript"></script>        
+        <script src="p5_ml5.js"></script>
+    </body>
+</html>
