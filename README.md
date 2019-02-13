@@ -10,6 +10,12 @@ Mljs is a part of Sophia project focusing on the coding tutorial to machine lear
 
 
 
+Reference:
+
+*   Ml5-example : https://github.com/ml5js/ml5-examples
+
+
+
 ## ml5.js
 
 
@@ -24,10 +30,12 @@ Mljs is a part of Sophia project focusing on the coding tutorial to machine lear
 *   Regression using feature extraction : [scripts](ml5js/regression_feature_extractor), [ml5+p5](ml5js/regression_feature_extractor/video_p5_ml5.js)
 *   Text generation with LSTM : [scripts](ml5js/text_generation_lstm), [ml5+p5](ml5js/text_generation_lstm/p5_ml5.js)
 *   Interactive text generation with LSTM : [scripts](ml5js/interactive_text_generation_lstm), [ml5+p5](ml5js/interactive_text_generation_lstm/p5_ml5.js)
-*   Style Transfer : [scripts](ml5js/style_transfer), [ml5+p5](ml5js/style_transfer/p5_ml5.js)
-*   Style Transfer with a Video Streaming : [scripts](ml5js/style_transfer_realtime), [ml5+p5](ml5js/style_transfer_realtime/p5_ml5.js)
+*   Style transfer : [scripts](ml5js/style_transfer), [ml5+p5](ml5js/style_transfer/p5_ml5.js)
+*   Style transfer with a video streaming : [scripts](ml5js/style_transfer_realtime), [ml5+p5](ml5js/style_transfer_realtime/p5_ml5.js)
 *   Pixel 2 Pixel : [scripts](ml5js/pix2pix), [ml5+p5](ml5js/pix2pix/p5_ml5.js)
-*   
+*   PoseNet detection with a video streaming : [scripts](ml5js/posenet_realtime), [ml5+p5](ml5js/posenet_realtime/p5_ml5.js)
+*   Object detection in a video streaming with YOLO : [scripts](ml5js/yolo), [ml5+p5](ml5js/yolo/p5_ml5.js)
+*   Word2Vec 
 
 
 
