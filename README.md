@@ -35,7 +35,7 @@ Reference:
 *   Pixel 2 Pixel : [scripts](ml5js/pix2pix), [ml5+p5](ml5js/pix2pix/p5_ml5.js)
 *   PoseNet detection with a video streaming : [scripts](ml5js/posenet_realtime), [ml5+p5](ml5js/posenet_realtime/p5_ml5.js)
 *   Object detection in a video streaming with YOLO : [scripts](ml5js/yolo), [ml5+p5](ml5js/yolo/p5_ml5.js)
-*   Word2Vec 
+*   Word2Vec : [scripts](ml5js/word2vec), [ml5+p5](ml5js/word2vec/p5_ml5.js)
 
 
 
