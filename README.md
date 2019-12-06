@@ -56,10 +56,10 @@ In this section, we provide you with more details about lower level API to machi
 
 ### Basic Concept
 
-*   Setup Tensorflow.js : 
-    *   setup via script tag : [browser_setup.html](tensorflowjs/setup/browser_setup.html)
-    *   setup via npm and packed via parcel : [npm_browser.js](tensorflowjs/setup/npm_browser.js), 
-    *   server-side : [nodejs_setup.js](tensorflowjs/setup/nodejs_setup.js)
+*   Setup Tensorflow.js: [Tutorial](mljs/tensorflowjs/setup/)
+    *   Script Tag: [jsFiddle demo](https://jsfiddle.net/jiankaiwang/b3uynh6o/), [browser_setup.html](tensorflowjs/setup/browser_setup.html)
+    *   Setup via NPM and Packaging via Bundle Tools : [npm_browser.js](tensorflowjs/setup/npm_browser.js), 
+    *   Implement on the Server-Side : [nodejs_setup.js](tensorflowjs/setup/nodejs_setup.js)
 *   Convert from python-based pertained models.
 *   Tensorflow.js Visualization : tfjs-vis
 *   Using TensorflowBoard
