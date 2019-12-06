@@ -1,0 +1,62 @@
+{
+  "dcnn/conv_1/W": {
+    "filename": "dcnn_conv_1_W",
+    "shape": [
+      5,
+      5,
+      1,
+      32
+    ]
+  },
+  "dcnn/conv_1/b": {
+    "filename": "dcnn_conv_1_b",
+    "shape": [
+      32
+    ]
+  },
+  "dcnn/conv_2/W": {
+    "filename": "dcnn_conv_2_W",
+    "shape": [
+      5,
+      5,
+      32,
+      16
+    ]
+  },
+  "dcnn/conv_2/b": {
+    "filename": "dcnn_conv_2_b",
+    "shape": [
+      16
+    ]
+  },
+  "dcnn/fc/W": {
+    "filename": "dcnn_fc_W",
+    "shape": [
+      784,
+      784
+    ]
+  },
+  "dcnn/fc/b": {
+    "filename": "dcnn_fc_b",
+    "shape": [
+      784
+    ]
+  },
+  "dcnn/global_step": {
+    "filename": "dcnn_global_step",
+    "shape": []
+  },
+  "dcnn/out/W": {
+    "filename": "dcnn_out_W",
+    "shape": [
+      784,
+      10
+    ]
+  },
+  "dcnn/out/b": {
+    "filename": "dcnn_out_b",
+    "shape": [
+      10
+    ]
+  }
+}

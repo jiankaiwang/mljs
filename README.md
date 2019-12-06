@@ -23,6 +23,7 @@ Reference:
 `ML5.js ` is heavily inspired by [Processing](https://processing.org/) and [p5.js](https://p5js.org/). In this section, we try to provide you with two different kinds of javascript scripts based on either native ml5.js or p5.js included.
 
 
+### Task APIs
 
 *   Basis (error-first callbacks and promises) : [scripts](ml5js/basis)
 *   frame classification on a video streaming : [scripts](ml5js/video_classification), [ml5](ml5js/video_classification/video_ml5.js), [ml5+p5](ml5js/video_classification/video_p5_ml5.js)
@@ -37,6 +38,12 @@ Reference:
 *   Object detection in a video streaming with YOLO : [scripts](ml5js/yolo), [ml5+p5](ml5js/yolo/p5_ml5.js)
 *   Word2Vec : [scripts](ml5js/word2vec), [ml5+p5](ml5js/word2vec/p5_ml5.js)
 
+### Training
+
+*   Image classification based on D-CNN network : Here we demo how to train an image classification on a deep CNN network, and dump out the variable weights in binary format. Next, we also show how to view the weights.
+    *   [training and dump variable weights](customized_training/training.py), [view the variable weights](customized_training/viewer.py)
+
+
 
 
 ## TensorFlow.js
@@ -44,3 +51,22 @@ Reference:
 
 
 In this section, we provide you with more details about lower level API to machine learning or deep learning tasks.
+
+
+
+### Basic Concept
+
+*   Setup Tensorflow.js: [Tutorial](mljs/tensorflowjs/setup/)
+    *   Script Tag: [jsFiddle demo](https://jsfiddle.net/jiankaiwang/b3uynh6o/), [browser_setup.html](tensorflowjs/setup/browser_setup.html)
+    *   Setup via NPM and Packaging via Bundle Tools : [npm_browser.js](tensorflowjs/setup/npm_browser.js), 
+    *   Implement on the Server-Side : [nodejs_setup.js](tensorflowjs/setup/nodejs_setup.js)
+*   Convert from python-based pertained models.
+*   Tensorflow.js Visualization : tfjs-vis
+*   Using TensorflowBoard
+
+
+
+
+
+
+
